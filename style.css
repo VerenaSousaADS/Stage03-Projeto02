@@ -21,7 +21,7 @@ main{
     margin: 0 auto;
 }
 
-main>p:first-child{
+main>div>p:first-child{
     
 
     font-family: 'Epilogue', sans-serif;
@@ -41,8 +41,8 @@ main>p:first-child{
 
 h1{
 
-    width: 329px;
-    height: 144px;
+    /* width: 329px;
+    height: 144px; */
 
     font-family: 'Epilogue', sans-serif;
     
@@ -108,6 +108,11 @@ ul li {
     gap: 3.8rem;
 }
 
+
+ul li + li{
+    margin-top: 3.2rem;
+}
+
 ul li span{
     font-family: 'Epilogue', sans-serif;
     
@@ -122,9 +127,31 @@ ul li span{
 
 /* media queries */
 
-@media (min-width: 40em){
+@media (min-width: 700px){
+
     body{
-        background-color: black;
+        padding: 8rem;
     }
+
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div{
+        max-width: 484px;
+    }
+
+    ul li{
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+    ul li + li{
+        margin-top: 3.2rem;
+    }
+
 }
 
