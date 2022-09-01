@@ -120,3 +120,11 @@ ul li span{
     color: #090039;
 }
 
+/* media queries */
+
+@media (min-width: 40em){
+    body{
+        background-color: black;
+    }
+}
+
